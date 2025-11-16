@@ -26,7 +26,7 @@ class UpdateBooksRequest extends FormRequest
             'description' => 'nullable|string',
             'image' => 'nullable|image|mimes:jpeg,png,jpg,gif|max:2048',
             'type' => 'required|in:manual,document',
-            'document_file' => 'nullable|mimes:pdf,doc,docx|max:10240',
+            'document_file' => 'nullable|mimes:pdf,doc,docx|max:40240',
         ];
     }
 }

@@ -26,8 +26,7 @@ class StoreBooksRequest extends FormRequest
             'description' => 'nullable|string',
             'image' => 'nullable|image|mimes:jpeg,png,jpg,gif|max:2048',
             'type' => 'required|in:manual,document',
-            'document_file' => 'required_if:type,document|nullable|mimes:pdf,doc,docx|max:10240',
-            // pages is a JSON string produced by the client-side page editor
+            'document_file' => 'required_if:type,document|nullable|mimes:pdf,doc,docx|max:40240',
             'pages' => 'nullable|string',
         ];
     }
